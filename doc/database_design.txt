@@ -1,0 +1,151 @@
+Tasks checklist:
+1. Preapre environment
+	a. Create table in database
+		also check if we can connect to flappy server.
+	b. create structures (model) in app to represent tables from database, 
+	also create data gateway class
+
+2. Facebook integrate (local test)
+	a. Get facebook ID
+	b. GetFriends list (store in global list)
+	
+3. PHP server
+	a. transaction page
+--------------------------------------------------------
+
+1. player's table
+
+	id -- db id
+	fbid(BIGINT)
+	max_level
+	gold
+	coins
+	life
+	tota_score(BIGINT)
+	last_login(TEXT)		// date and time
+	epoch(BIGINT)
+	reward_flag(INT)
+2. level_info			user-level information
+
+	id						local id for indexing purposes
+	fbid (BIGINT)
+	level_id				zero based level id
+	score
+	star
+
+3. booster_info
+	id(INT)
+	fbid(BIGINT)
+	boosterID(INT)				boosters id in resource?
+	count (INT) (default 0)
+
+4. life_request
+
+	id					we will use request id for update
+	fbid_from(BIGINT)			
+	fbid_to(BIGINT)
+	granted(SMALL_INT)(default 0)			default 0
+	recieved(SMALL_INT)(default 0)
+
+5. Item price list
+	itemID
+	itemResID				from resourceID
+	price
+	descr					a little text desc example "heart"
+	currency				0: gold, 1: coin 3: actual money (in USD)
+
+	For Gold and coin handling, only one data in coin 
+	For Gold and coin list, just get the item price and multiply by quantity in the app.
+	This is assuming that quatity will not change and only the price will change.
+
+	example gold
+		itemID: something
+		itemResID: ITEM_GOLD.
+		price: 100
+		descr: "Gold"
+		currency: 3
+
+7. transaction table
+	transact_id AUTO_INC
+	fbid
+	amount (float)
+	currency(TEXT)
+	payment_id (BIGINT)
+	quantity (INT)
+--------------------------------------------------------
+
+1. 
+how to get user level information:
+
+select all level info where fbid = userid
+
+2. get boosters information for user
+select all from boosters_info where fbid = userid
+
+3. get friends information per level
+
+	???what would be our implementaiton for this???	
+
+	implementaiton for now
+	on JS side:
+	for all friendslist
+	{
+		fbid = get fb id..
+		
+		dataGateWay.GetLevelByUser(fbid);
+		// ajax reply are asynchronous
+	}
+	
+	data packet sample:
+	REQUEST_ID|user_fb_id|levelnum|score|star
+	
+	// this is assuming that ajax is only asynchronous and 
+	// we can only have one callback to recieve data
+	function OnDataRecieve(){
+		1. get Requestid from packet.
+		2. pass the data to specific function
+			example:
+				HandleLevelPerUser(...);
+	}
+	
+	function HandleLevelPerUser()
+	{
+		levelnum = getlevelfrompacket();
+		
+		playerinfo;
+		//create player info
+		
+		levellist[levelnum].players.add(playerinfo);
+	}	
+	
+	****Note: Insert 4 temporary RANDOM friend in facebook, 
+	and it will be added with level per user data.
+	
+4. friend's life request
+select * from life_request where to fbid_to = userid
+
+--------------------------------------------------------
+create class
+
+DataGateway
+	-- will send and recieve packets
+	-- will construct and breakdown packets
+	-- encrypt and decrypt packets
+--------------------------------------------------------
+Request ID (examples):
+Log-in User (REQ_LOGIN)
+	Input: FBID
+	Return: players information
+	future plan: shall we include key for decode?
+
+Get User per level information (REQ_USER_PER_LEVEL)
+	Input: fbid
+	Return: level info list
+
+Set ...
+
+Get Booster information(REQ_BOOSTER_DATA)
+	Input: fbid
+	
+...
+...

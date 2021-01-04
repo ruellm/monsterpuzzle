@@ -1,0 +1,16 @@
+notes based from 
+[This is my Note(Ruell and not from client(Ash)]
+This is based from
+Flappy Bird feature:
+https://flappybirdmultiplayer.com/project/#p=home
+
+Their own clone is: https://apps.facebook.com/flappyadventures/
+
+1. Daily booster Wheel Spin -- earn boosters or rewards from the Spin
+	--including earning the booster.
+2. Like button - it will be posted in your wall
+
+
+unsure:
+1. play with friends
+2. messages

@@ -1,0 +1,154 @@
+﻿<!-- 
+    index.html
+    Main web page (non dynamic)
+    Date Started: May 9, 2014
+    Author: Ruell Magpayo<ruellm@yahoo.com>
+
+    Spirit Bubble Production team
+
+    Game and engine developer: Ruell Magpayo <ruellm@yahoo.com>
+    Art :   Meg Modequillo 
+            Andre Anog
+    
+    Music and Sound effects: Jupiter Isidro
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Spirit Bubble</title>
+    
+    <!-- CSS Definitions -->  
+    <link href="fonts/erasdemi/stylesheet.css" rel="stylesheet" />
+    <link href="fonts/jonny_quest/stylesheet.css" rel="stylesheet" />
+	 	
+	<!-- flag to determine we are in debug mode -->
+	<script> var g_DEBUG_MODE = true; </script> 
+	
+	<!-- We are using JQUERY for firefox coordinates -->
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	 
+    <!-- Global definitions -->
+    <script src="js/common.js"></script>
+    <script src="js/resource.js"></script>
+
+    <!-- Core references -->
+    <script src="js/core/baseObject.js"></script>
+    <script src="js/core/engine.js"></script>
+    <script src="js/core/graphics.js"></script>
+    <script src="js/core/state.js"></script>
+
+      <!-- Utility references -->
+    <script src="js/utility/timer.js"></script>
+    <script src="js/utility/animator.js"></script>
+    <script src="js/utility/point.js"></script>
+    <script src="js/utility/longAudio.js"></script>
+    <script src="js/utility/vector2D.js"></script>
+    <script src="js/utility/rectangle.js"></script>
+    <script src="js/utility/collisionHandler.js"></script>
+    
+    <!-- scene classes reference -->
+    <script src="js/scene/imageObject.js"></script>
+    <script src="js/scene/animatedObject.js"></script>
+    <script src="js/scene/animatedText.js"></script>
+    <script src="js/scene/repeatingImage.js"></script>
+
+    <!-- UI class reference -->
+    <script src="js/ui/uibase.js"></script>
+    <script src="js/ui/uimanager.js"></script>
+    <script src="js/ui/button.js"></script>
+    <script src="js/ui/listBoxBase.js"></script>
+    <script src="js/ui/customListBox.js"></script>
+    <script src="js/ui/textBoxBase.js"></script>
+    <script src="js/ui/customTextBox.js"></script>
+
+    <!-- Game related references -->
+    <script src="js/game/bubble.js"></script>
+    <script src="js/game/field.js"></script>
+    <script src="js/game/launcher.js"></script>
+    <script src="js/game/demons.js"></script>
+    <script src="js/game/china.js"></script>
+    <script src="js/game/levelHandle.js"></script>
+    <script src="js/game/worldMap.js"></script>
+    <script src="js/game/level_background.js"></script>
+    <script src="js/game/splash.js"></script>
+
+    <!-- Level info -->
+    <script src="js/data/level.js"></script>
+    <script src="js/data/level_data/pattern_builder.js"></script>
+    <script src="js/data/level_data/level_info_1.js"></script>
+    <script src="js/data/level_data/predefine_fields.js"></script>
+    <script src="js/data/inapp_items.js"></script>
+
+    <!-- Game Data -->    
+    <script src="js/data/fb_data.js"></script>    
+    <script src="js/data/fbaccess.js"></script>
+    <script src="js/data/gameData.js"></script>    
+	<script src="js/data/rc4.js"></script>
+    <script src="js/data/ajaxAdapter.js"></script>
+
+    <!-- application states -->   
+    <script src="js/states/storyState.js"></script> 
+    <script src="js/states/splashState.js"></script>
+    <script src="js/states/animScrollWindow.js"></script>
+    <script src="js/states/purchaseWindow.js"></script>
+    <script src="js/game/reward.js"></script>
+    <script src="js/states/giveLifeWindow.js"></script>
+    <script src="js/states/utilityWindows.js"></script>
+    <script src="js/states/topBarCommon.js"></script>
+    <script src="js/states/loadState.js"></script>
+    <script src="js/states/gameState.js"></script>
+    <script src="js/states/dailySpinWindow.js"></script>
+    <script src="js/states/mapState.js"></script>
+    <script src="js/states/levelInfoScreen.js"></script>
+    
+     <!-- system entry point -->
+    <script src="js/main.js"></script>
+    <script src="js/default.js"></script>
+
+    <style type="text/css">body, a:hover {cursor: url(images/Arrow.cur), progress !important;}</style>
+</head>
+
+    <script>
+        
+		//////////////////////////////////////////////////////////////////////////////
+		// for emulation of invitable friends
+		//////////////////////////////////////////////////////////////////////////////
+		
+        var invitable = new FB_Profile();
+        invitable.id = 10000;
+        invitable.name = "Aida";
+        invitable.pictureURL = "images/game_screen/balls/static/ball static A.png";
+        g_FBInvitableList.push(invitable);;			
+
+        var invitable = new FB_Profile();
+        invitable.id = 20000;
+        invitable.name = "Lorna";
+        invitable.pictureURL = "images/game_screen/balls/static/ball static B.png";
+		g_FBInvitableList.push(invitable);;
+
+        var invitable = new FB_Profile();
+        invitable.id = 30000;
+        invitable.name = "Fey";
+        invitable.pictureURL = "images/game_screen/balls/static/ball static C.png";
+		g_FBInvitableList.push(invitable);;
+
+        var invitable = new FB_Profile();
+        invitable.id = 50000;
+        invitable.name = "Angeli";
+        invitable.pictureURL = "images/game_screen/balls/static/ball static D.png";
+		g_FBInvitableList.push(invitable);;
+
+        LoadProfileImage(g_FBInvitableList);
+		
+    </script>
+
+
+<body>
+    <div style="width: 100%; text-align:center;">
+        <canvas id="game_canvas" align="center" style="background:#000000;"> 
+              HTML5 canvas not supported.
+        </canvas> 
+    </div>
+</body>
+</html>

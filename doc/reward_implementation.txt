@@ -1,0 +1,56 @@
+
+REWARD_TYPE_SCORE = 0;
+REWARD_TYPE_LEVEL_REACH = 1;
+
+rewardData = {
+	{
+			id: 2,
+			type: REWARD_TYPE_SCORE,
+			value: 10000
+	},
+	...
+
+}
+
+gamedata
+{
+	reward_flag_bit = 0;
+}
+
+mapstate::load()
+{
+	
+	pRewardWindowandshit = new RewardWindow();
+	checkReward();
+}
+
+mapstate::CheckReward()
+{
+	for rewardData.length {
+	
+		if(gamedata.reward_flag_bit & rewardData[i].id == 1) continue;
+		if(rewardData[i].type == REWARD_TYPE_SCORE){
+			if(gamedata.totalscore >= rewardData[i].value )
+				reward = true;
+				break;
+		} else if(rewardData[i].type == REWARD_TYPE_LEVEL_REACH)
+			if(gamedata.toplevel > rewardData[i].value)
+			{
+				...
+			}
+
+	}
+	
+	if(reward){
+		rewardWindow->Show(type);
+		change state rewardwidnwo;
+		Ajax_UpdateReward();
+	}
+	
+}
+
+1. steps, create a Reward class with "Share button"
+	a. declare the class on map state class
+2. create the reward info data (above)
+3. create the database reward flag bit.
+4. create ajax and php transaction, update reward..

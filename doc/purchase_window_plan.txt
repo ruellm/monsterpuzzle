@@ -1,0 +1,36 @@
+// not finish, must finish
+
+class AnimScrollWindow
+{
+	this.substate = 0;
+	this.x;
+	this.y;
+
+	internalLoad(){}	
+};
+
+
+class PurchaseMultipleWnd : AnimScrollWindow
+{
+	this.buynowbutton;
+	this.type;
+	internalLoad(){
+		deployedX = customvalue;
+		deployedY = customValue
+
+		this.buybutton = onclick(){
+		}
+	}
+};
+
+class SinglePurchaseWnd : AnimScrollWindow
+{
+	this.buynowbutton;
+	this.type;
+	internalLoad(){
+		deployedX = customvalue;
+		deployedY = customValue
+		this.buybutton = onclick(){
+		}
+	}
+}

@@ -1,0 +1,3 @@
+bg music - please fid a way to loop this music at html5 without any gap
+sfx - nomatch.mp3 to be replaced with nomatch02.mp3 - please replace the "no match" sfx, this is according to client feedback: - the 'squishy' sound after launching the bubble feels weird, the bubbles were supposed to be spirit balls and not watery ones.										
+

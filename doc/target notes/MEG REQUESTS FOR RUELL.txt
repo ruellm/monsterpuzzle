@@ -1,0 +1,22 @@
+2) make the spacing for the cursor uniform instead of "stretchy"
+	Ruel: lets discuss this, (Low Priority).
+5) make darker cursor "run through" lighter cursors
+6) speed up blinking animation
+	Ruel: Noted.
+7) integrate launched animation
+	Ruel: Noted but low priority.
+8) scatter the falling sparkles as they travel down the screen, don't make them fall in a straight line
+
+tips suggestions:
+level 1) "keep the balls at the ceiling at a minimum. put other balls at the bottom" or something i should word this better haha
+
+level 2) would make a good level 1 but i'd suggest na fixed ang order sa balls instead of random
+
+level 4) where we can introduce the wall bouncing concept so we can hit the balls  on the higher rows without having to clear the lower rows first
+
+other tips na wa pa ko kabaw which level to put them in:
+-introducing the boosters...or pwede sad naay separate menu for this lang aron accessable sa player anytime
+
+-kanang mu lose kag life every quit game...ug ang timer para when makakuha ug new life
+
+-

@@ -1,0 +1,6 @@
+
+implementation checklist
+
+1. Tip window only if NEW level
+2. timer for zero life implementation (check timer_life_implementation)
+	we might need a sad face sprite for this.

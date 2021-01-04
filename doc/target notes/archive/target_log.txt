@@ -1,0 +1,45 @@
+
+things to splice (game screen)
+[X] wood panel at top - the one that handles the borders the heart, gold, etc.
+[X] heart sprite
+[X] Gold bar sprite
+[X] gold coin sprite
+[X] plus button, please include plus button hover
+
+[X] the entire top panel sprite
+[X] the entire side panel sprite
+
+[X] booster pannel
+9. question mark button, please include mouse hover
+[X] +1 bubble buttons.
+
+[X] bubbles (including animations)
+	[X] launch bubble animation
+	[X] deployed animation
+	[X] vanished animation.
+	[X] idle while in canon animation
+	[X] idle while in playing field animation(low priority-
+
+12. 2 cute monsters (including animations)
+	-controlling launcher
+	-idle
+	-worried
+	-failed
+	-win
+
+13. Mayor Doma (including animations)
+	[X]idle
+	[X]worried
+	-failed
+	-win
+
+[X] "Gun" sprite
+[X] dotted line sprite (need explanation), provide one dot lang.
+
+
+[X] background (atleast 3 layers, waterfront is on the farthest layer).
+
+17. Game playing field area
+
+18. the 'bank' on top including animation, similar to bubble witch. please refer to specs page 15.
+

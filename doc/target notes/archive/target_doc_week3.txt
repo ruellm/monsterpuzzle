@@ -1,0 +1,62 @@
+Target for week3 (June 3 - June 10, 2014).
+
+1. Map
+	a) Animations on the map 
+		clouds, 
+		birds, 
+	b) Map level handle revise
+		- indication of player's current level?
+
+2. Game screens additional buttons
+	Quit button--> might as well support --> 
+	-----------------------------
+	Surrender game? 
+	[yes][no way!] [restart]
+	----------------------------- 
+
+3. Sound Off/On button (check bubble witch or Titays for reference)
+
+4. Loading animation overlay (this is different from loading screen).
+	-- make it an animated sprite NOT just "Loading" text
+
+5. Purchase window
+	a. Purchase Booster screen
+	b. purchase additional bubble screen (pop-up during gameplay)
+	c. Purchase Gold screen
+	d. Purchase Life/heart screen
+
+	I suggest i common nalang ang 
+		window sprite,
+			for multiple item(buying gold and coins)
+			for buying single item 
+		BUY button, 
+		Close button
+
+	(a) and ang content nalang of things to buy ang mag differ IF purchasing a single item just like buying boosters or heart, 
+	
+	(b)Pero if buying Gold or coins, same style as the other facebook games, present the option as a list to choose.
+	
+	See bubble witch or any other king.com games for reference.
+	Some King.com games are Farm heroes, candy crush saga, pet rescue, etc.
+
+	(c) spliced generic gold bars, gold coin items para ma reuse :)
+
+6. booster graphics
+	a) for UI
+		- level info screen (with the "+" button para mo purchase cla sa boosters).
+		- i display during purchase booster, mo pop-up ang purchase window, then naay booster na paliton na info sa window.
+		- idisplay sa top left sa in-game, if player wants to use the boosters during game.
+	b) for ingame
+
+7. loading screen (similar to candy crush, bubblemeadow, titays)
+- need to explain how progress bar in loading screen should be spliced in person or send sample (c/o Ruell)
+
+
+8. start planning for the next 3 background concept
+
+Note: (Pending from week2 c/o Andre)
+
+Game screens pending
+- disappear hammer animation - used when worry is over
+- failed and win animation sa monster and mayordoma
+- water fall animation

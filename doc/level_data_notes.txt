@@ -1,0 +1,48 @@
+
+leveltype
+{
+	clear all bubbles
+	bankcount
+	achieve minimum score
+	
+}
+
+facebook_profile
+{
+	name
+	id
+	picture URL
+	score
+}
+
+facebook_profile_level
+{
+	id
+	score
+}
+
+level
+{
+	star_count;
+	score; score sa kana na level
+
+	friends_who_played //--> this will use id and refer to global facebook friend list
+
+	leveltype
+	bubble_count // max bubble count
+	description
+
+	//boosters allowed? == randomly present booster
+}
+
+gamedata
+{
+	life = 0;
+	maxlevel = 3;
+	levelinfo_list;
+
+	Gold
+	coins
+
+	global_facebook_friends_list, implemented as map	
+}

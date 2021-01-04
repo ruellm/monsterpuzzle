@@ -1,0 +1,31 @@
+sound effects list
+
+1. launch bubble sfx - when bubble is launched from the cannon.
+
+2. paired bubble - when bubble is paired with 2 or 3 bubbles, this is more like 'disappear' animation effect.
+
+3. deployed bubble (not paired) - when bubble is deployed to the playing field without making a match.
+
+4. bubble bounce sfx - when the bubble bounced on the side of the field.
+
+5. mouse click effects
+
+6. Pop-up window effect (optional)
+
+7. sound background
+	a. map background music - played on the map screen
+	b.in-game background music - played during game screen
+		there will be 4 different level types depending on the location in the map.
+		it is preferrable if we have 4 different background music, on different level types.
+		
+		- 4 types (for 4 level types) for FULL game
+	 	- one background music for initial release in-game.
+
+
+
+Refer to the following games:
+https://apps.facebook.com/farmheroes/
+https://apps.facebook.com/candycrush/
+https://apps.facebook.com/bubbleage/
+https://apps.facebook.com/bubblewitch/
+http://www.classicgamesarcade.com/game.php?gId=21606&fname=puzzle-bobble

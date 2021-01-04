@@ -1,0 +1,62 @@
+
+update user database:
+
+gamedata
+{
+	time target = 0;
+	
+}
+
+GetCurrentLifeTime()
+{
+	return timetarget - getcurrenttime
+}
+
+
+UpdateLife(value)
+{
+	if(life == 0){
+		time target = GetTime + 15minutes.
+		insert to dbrequest
+	}	
+}
+
+
+on topbarcommon
+{
+	//add member
+	no life window;
+	award screen;
+
+	UpdateTimer()
+	{
+		diff = timetarget-currenttime;
+		if(diff <=0) {
+			life += 5;
+			display award screen		
+		}
+	}
+}
+
+on gamescreen
+{
+	Update()
+	{
+		if(life == 0 && substate == gameplaying){
+			substate= nolifewindow.
+			nolifewindow.show();
+		}
+	}
+
+}
+
+on mapstate
+{
+	onclick level
+	{
+		if(life == 0)
+		{
+			display kawawa
+		}
+	}
+}

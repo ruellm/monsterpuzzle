@@ -1,0 +1,10 @@
+Life = 0 - 36
+gold = 37 - 71
+hor= 72 - 108
+verti= 109 - 143
+bomb = 144 - 180
+paint(blue) = 181 - 215
+pink = 216 - 252
+green = 253 - 287
+yellow = 288 - 324
+rainbow = 325 - 360

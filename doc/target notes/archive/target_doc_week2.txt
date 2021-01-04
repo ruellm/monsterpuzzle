@@ -1,0 +1,30 @@
+Target Week May 27 - 31
+
+Game screens pending
+- disappear hammer animation - used when worry is over
+- failed and win animation sa monster and mayordoma
+- water fall animation
+
+[X] "Ready" and "go" text sprite, "Game Over"/"failed", "Completed" 
+[X] gray sprite bubble
+
+Map screen
+(refer to other maps in mini specs pdf for reference)
+ -- !!!splice into sections, add a little detail to the map <-- DO NOT SPLICE NA!!!! Let's use a bigger map instead! 1980x1080
+ -- add picture handle - 
+	a) in most games there are two pictures shown, your picture in the current level
+	b) and your friends picture who played on that level tiled/stack together
+	(See Candy crush for reference, they have the easiest way of doing it).
+
+ -- level number handle and mouse hover
+ -- star sprite (for map)
+
+Level info/complete/failed screen
+(refer to other maps in mini specs pdf for reference)
+[X] upload ang level info and level complete/failed screen sprites sa repo
+[X] Please include "Completed" and "Failed" text as sprite for this screen.
+[X] heart button modify to common sprite to include "+" including the hover
+[X] re splice top score pop window 
+[X] Star animation on complete screen
+(see modification request in FB group for further info)
+
